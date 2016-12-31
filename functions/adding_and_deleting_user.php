@@ -7,7 +7,7 @@ function show_user_superior(){
    if ($conn->connect_error) die($conn->connect_error);
 
    $query  = "SELECT * FROM cadastro_superior WHERE cargo_superior <> 'super_user' ";
-   if($_SESSION="pres"){ $query  = "SELECT * FROM cadastro_superior WHERE cargo_superior <> 'super_user' and cargo_superior <> 'pres'";}
+   if($_SESSION['Cargo']=="pres"){ $query  = "SELECT * FROM cadastro_superior WHERE cargo_superior <> 'super_user' and cargo_superior <> 'pres'";}
    $result = $conn->query($query);
    if (!$result) die($conn->error);
    elseif ($result->num_rows)

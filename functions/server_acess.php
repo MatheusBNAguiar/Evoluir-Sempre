@@ -1,7 +1,7 @@
-<?php 
-    $hn="mysql.evoluirsempre.com.br";
-    $un="evoluirsempre01"; 
-    $pw="Wenidarc1961"; 
-    $db="evoluirsempre01"; 
+<?php
+    $hn="localhost";
+    $un="barreto";
+    $pw="823a5320";
+    $db="new_evolve"; 
 
 ?>

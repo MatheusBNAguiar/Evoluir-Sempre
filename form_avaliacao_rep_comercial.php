@@ -1,33 +1,33 @@
 <?php
-session_start();
-    require_once 'functions/process_user_login.php';
-    require_once('functions/process_and_send_form_data.php');
-    require_once 'functions/show_areas_that_can_be_used.php';
-    send_to_the_right_place("ger");
-    if(isset($_POST['get_out'])){
-        destroy_session_and_data();
-    }
-    if(isset($_POST['enviar_formulario']) && isset($_POST['avaliado_name'])){
-        $espaco    = " ";
-        $travessao = "-";
-        $data_aleatoria="03";
+  session_start();
+  require_once 'functions/process_user_login.php';
+  require_once('functions/process_and_send_form_data.php');
+  require_once 'functions/show_areas_that_can_be_used.php';
+  send_to_the_right_place("ger");
+  if(isset($_POST['get_out'])){
+      destroy_session_and_data();
+  }
+  if(isset($_POST['enviar_formulario']) && isset($_POST['avaliado_name'])){
+      $espaco    = " ";
+      $travessao = "-";
+      $data_aleatoria="03";
 
-        $id_manager  = $_SESSION['ID'];
-        $id_worker   = $_POST['avaliado_name'];
-        $date        = "{$_POST['ano_envio']}{$travessao}{$_POST['mes_envio']}{$travessao}{$data_aleatoria}";
+      $id_manager  = $_SESSION['ID'];
+      $id_worker   = $_POST['avaliado_name'];
+      $date        = "{$_POST['ano_envio']}{$travessao}{$_POST['mes_envio']}{$travessao}{$data_aleatoria}";
 
 
-        $cobranca    ="{$_POST['question1_1'] }{$espaco}{$_POST['question2_1'] }{$espaco}{$_POST['question3_1'] }{$espaco}{$_POST['question4_1'] }{$espaco}{$_POST['question5_1'] }";
-        $informacoes ="{$_POST['question1_2'] }{$espaco}{$_POST['question2_2'] }{$espaco}{$_POST['question3_2'] }{$espaco}{$_POST['question4_2'] }{$espaco}{$_POST['question5_2'] }";
-        $avaliacoes ="{$_POST['question1_3'] }{$espaco}{$_POST['question2_3'] }{$espaco}{$_POST['question3_3'] }{$espaco}{$_POST['question4_3'] }{$espaco}{$_POST['question5_3'] }";
-        $qualidade ="{$_POST['question1_4'] }{$espaco}{$_POST['question2_4'] }{$espaco}{$_POST['question3_4'] }{$espaco}{$_POST['question4_4'] }{$espaco}{$_POST['question5_4'] }{$espaco}{$_POST['question6_4'] }";
+      $cobranca    ="{$_POST['question1_1'] }{$espaco}{$_POST['question2_1'] }{$espaco}{$_POST['question3_1'] }{$espaco}{$_POST['question4_1'] }{$espaco}{$_POST['question5_1'] }";
+      $informacoes ="{$_POST['question1_2'] }{$espaco}{$_POST['question2_2'] }{$espaco}{$_POST['question3_2'] }{$espaco}{$_POST['question4_2'] }{$espaco}{$_POST['question5_2'] }";
+      $avaliacoes ="{$_POST['question1_3'] }{$espaco}{$_POST['question2_3'] }{$espaco}{$_POST['question3_3'] }{$espaco}{$_POST['question4_3'] }{$espaco}{$_POST['question5_3'] }";
+      $qualidade ="{$_POST['question1_4'] }{$espaco}{$_POST['question2_4'] }{$espaco}{$_POST['question3_4'] }{$espaco}{$_POST['question4_4'] }{$espaco}{$_POST['question5_4'] }{$espaco}{$_POST['question6_4'] }";
 
-        $money="{$_POST['meta_money']}{$espaco}{$_POST['faturamento_money']}";
-        $comentario = $_POST['comentario'];
-        $area= $_POST['area_de_trabalho'];
-        add_data($area,$id_manager,$id_worker,$date,$cobranca,$informacoes,$avaliacoes,$qualidade,$money,$comentario);
-    }
-    ?>
+      $money="{$_POST['meta_money']}{$espaco}{$_POST['faturamento_money']}";
+      $comentario = $_POST['comentario'];
+      $area= $_POST['area_de_trabalho'];
+      add_data($area,$id_manager,$id_worker,$date,$cobranca,$informacoes,$avaliacoes,$qualidade,$money,$comentario);
+  }
+?>
 <html lang="pt-br">
 <head>
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8">

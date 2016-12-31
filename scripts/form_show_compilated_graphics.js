@@ -3,7 +3,7 @@ function fnDrawMultiLineChart(Data, DivID, RevenueName) {
              width = 800 - margin.left - margin.right,
              height = 350 - margin.top - margin.bottom;
 
-            var parseDate = d3.time.format("%b %y");
+            var parseDate = d3.time.format("%b-%Y");
 
             var x = d3.scale.ordinal()
                     .rangeRoundBands([0, width]);
@@ -111,11 +111,11 @@ function fnDrawMultiLineChart(Data, DivID, RevenueName) {
                         var xpos = x(parseDate(new Date(d.RevData["DateSubm"]))) + x.rangeBand() / 2;
                         return "translate(" + xpos + "," + y(d.RevData["Rate"]) + ")";
                     })
-                    .attr("x", 3)
+                    .attr("x", 50)
                     .attr("dy", ".35em")
                     .attr("class", "segmentText")
                     .attr("Segid", function (d) { return d["Category"]; })
-                    .text(function (d) { return d["Category"]; });
+                  //  .text(function (d) { return d["Category"] ; });
 
             d3.selectAll(".segmentText").on("click", function (d) {
                 var tempId = d3.select(this).attr("Segid");

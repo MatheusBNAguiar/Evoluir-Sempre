@@ -2,7 +2,7 @@
   function treat_date($data){
       $espaco=" ";
       $test=explode("-",$data);
-      $meses=["Jan","Feb","Mar","Abr","May","Jun","Jul","Aug","Sep","Nov","Out","Dez"];
+      $meses=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Nov","Ocd","Dec"];
       $mes = $meses[(int)$test[1]];
       $newdata="{$test[2]}{$espaco}{$mes}{$espaco}{$test[0]}";
       return $newdata;

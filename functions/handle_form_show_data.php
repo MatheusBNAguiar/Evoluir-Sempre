@@ -127,7 +127,7 @@ function create_data_partial(){
   $nota_descricao3=group_nota_categoria_partial($notas3,$descricao3);
   $nota_descricao4=group_nota_categoria_partial($notas4,$descricao4);
   $nota_descricao5=group_nota_categoria_partial($aproveitamento,$agrupamento_titulos);
-  return array($agrupamento_titulos,$nota_descricao1,$nota_descricao2,$nota_descricao3,$nota_descricao4,$nota_descricao5);
+  return array($agrupamento_titulos,$nota_descricao1,$nota_descricao2,$nota_descricao3,$nota_descricao4,$nota_descricao5,"Aproveitamento Final",$aproveitamento_final);
 
 }
 

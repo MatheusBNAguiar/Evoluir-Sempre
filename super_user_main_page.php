@@ -64,8 +64,8 @@
                     <button class="btn btn-primary"type="submit">Adicionar</button>
                 </form>
 
-                <div class="col-xs-12">
-                    <table class="table table-striped ">
+                
+                    <table class="table table-striped col-xs-12">
                         <thead>
                             <tr>
                                 <th>Nome</th>
@@ -79,7 +79,7 @@
                         </tbody>
                     </table>
 
-                </div>
+                
             </div>
         </div>
 

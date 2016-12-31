@@ -86,7 +86,18 @@ END;
                 $third_title=$data_to_use[0][2];
                 $fourth_title=$data_to_use[0][3];
                 $fifth_title=$data_to_use[0][4];
+                $sixth_title=$data_to_use[6];
+                $aproveitamento_final=$data_to_use[7];
                 echo<<<END
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h2>   $sixth_title</h2>
+
+                  </div>
+                  <div class="panel-body" >
+                    <h3>Nota:$aproveitamento_final</h3>
+
+                </div>
                 <div class="panel panel-default">
                   <div class="divChartTrends0 panel-heading">
                   <h2>$first_title</h2>

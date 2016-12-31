@@ -323,7 +323,7 @@
                                         </div>
 
                                     <div class="col-xs-12 pergunta">
-                                        <p>8. Estou lendo algum livro neste mês.</p>
+                                        <p>8. Planejei as ligações de acordo com as necessidades da região.</p>
                                         <div class="col-xs-12 col-sm-6 col-md-3">
                                             <select name="question8_3" class="form-control">
                                                 <option value="1">1</option>

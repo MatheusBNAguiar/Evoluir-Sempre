@@ -35,6 +35,7 @@ function show_correct_bars($area){
 
                 </div>
 
+
 END;
 
   }
@@ -63,6 +64,7 @@ END;
                             </i> Administrar Gerentes
                         </a>
                 </div>
+            
 
 END;
 
