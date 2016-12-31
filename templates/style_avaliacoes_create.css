@@ -1,0 +1,17 @@
+h2{
+    display: inline-block;
+    border-bottom: 5px solid #333;
+    
+}
+input{
+    width:40% !important;
+    display:inline-block;
+    
+}
+.pergunta{
+    margin:10px;
+}
+button{
+    float:right;
+    
+}

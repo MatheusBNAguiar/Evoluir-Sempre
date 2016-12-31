@@ -1,0 +1,42 @@
+
+.axis path,
+    .axis line {
+        fill: none;
+        stroke: #000;
+        shape-rendering: crispEdges;
+    }
+
+    .x.axis path {
+        display: none;
+    }
+
+    .line {
+        fill: none;
+        stroke: steelblue;
+        stroke-width: 1.5px;
+    }
+    svg{
+        border:1px solid black;
+    }
+    .grid {
+        fill: none;
+        shape-rendering: crispEdges;
+        stroke: lightgrey;
+        opacity: 0.7;
+        stroke-width: 1px;
+    }
+    .segmentText{
+        cursor:pointer;
+    }
+    div.tooltip {
+        position: absolute;
+        text-align: center;
+        width: 120px;
+        height: 15px;
+        padding: 5px;
+        font: 12px sans-serif;
+        background: #ddd;
+        border: solid 1px #aaa;
+        border-radius: 8px;
+        pointer-events: none;
+    }
